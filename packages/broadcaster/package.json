@@ -1,0 +1,16 @@
+{
+  "name": "@cmichel/broadcaster",
+  "version": "1.0.0",
+  "main": "dist/config.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npx babel src --out-dir dist",
+    "start": "node dist/broadcast.js",
+    "start:dev": "babel-node src/broadcast.js"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "node-ipc": "^9.1.1",
+    "steem": "^0.6.7"
+  }
+}
